@@ -1279,7 +1279,8 @@ a.btn-mod:focus{
 	display: table-cell;
 	vertical-align: middle;
 	max-width: 120px;
-    height: 75px;
+  width: 75px;
+  height: 75px;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -1332,7 +1333,7 @@ a.logo:hover{
 }
 
 .small-height{
-    height: 55px !important;
+  height: 55px !important;
 }
 .small-height .inner-nav ul li a{
 	height: 55px !important;
