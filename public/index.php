@@ -187,7 +187,7 @@
    * Load database models
    *
    */
-  $app['StructureLoader'] (['entry', 'member'], _ROOT . '/model');
+  $app['StructureLoader'] ([], _ROOT . '/model');
 
 
   /**
@@ -195,7 +195,7 @@
    * Load Controllers
    *
    */
-  $app['StructureLoader'] (['main', 'entry', 'user' => ['main', 'article', 'photo']], _ROOT . '/app');
+  $app['StructureLoader'] (['main'], _ROOT . '/app');
 
 
   /**
@@ -207,10 +207,12 @@
 
     $app['login'] = false;
 
+    /*
     if ($app['session']->get ('login') == true && is_array ($app['session']->get ('user'))) {
       $app['login'] = true;
       $app['user'] = Model::factory ('Member')->find_one ($app['session']->get ('user/id'));
     }
+    */
 
   }, 1);
 
