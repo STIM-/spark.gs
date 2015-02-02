@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {% if app.env.web.base -%}
+  <base href="{{ constant('_BASE') }}/" />
+  {% endif -%}
+  <meta name='robots' content='noindex,follow' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="img/favicon.png"/>
+
+  <title>Spark</title>
+
+  <!-- bower-css:start -->
+  <link href="assets/components/jplayer/dist/skin/pink.flag/css/jplayer.pink.flag.css" rel="stylesheet">
+  <link href="assets/components/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/components/medium-editor/dist/css/medium-editor.css" rel="stylesheet">
+  <link href="assets/components/medium-editor/dist/css/themes/default.css" rel="stylesheet">
+  <link href="assets/components/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet">
+  <link href="assets/components/blueimp-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet">
+  <link href="assets/components/blueimp-file-upload/css/jquery.fileupload-noscript.css" rel="stylesheet">
+  <link href="assets/components/blueimp-file-upload/css/jquery.fileupload-ui-noscript.css" rel="stylesheet">
+  <link href="assets/components/medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin.css" rel="stylesheet">
+  <!-- bower-css:end -->
+
+  <link rel="stylesheet" href="assets/gridlocked/css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="assets/gridlocked/css/light.css" type="text/css" media="screen" id="colour_switch" />
+  <link rel="stylesheet" href="assets/spark/style.css" type="text/css" media="screen" id="colour_switch" />
+
+</head>
+
+<body>
+  <div class="{{ _class is defined ? _class : 'home page page-id-227 page-template page-template-template-portfolio page-template-template-portfolio-php chrome layout-2cr' }}">
+
+  <!--BEGIN #bg-line-->
+  <div id="bg-line"></div>
+
+    <!-- BEGIN #container -->
+    <div id="container" class="clearfix js-disabled">
+
+      <!--BEGIN #content -->
+      <div id="content">
+
+        <!--BEGIN #widget-overlay -->
+        <div id="widget-overlay-container" style="margin-top: -473px; display: block;">
+
+          <!--BEGIN #widget-overlay -->
+          <div id="widget-overlay">
+
+            <!--BEGIN #overlay-inner -->
+            <div id="overlay-inner" class="clearfix">
+
+              <div class="column">
+                <div id="text-2" class="widget widget_text">
+                  <h3 class="widget-title">About Gridlocked</h3>
+                  <div class="textwidget">
+                    <p>Boom! This theme embraces post formats allowing you to add quotes, asides, audio, video, galleries, images and of course good old standard posts. </p>
+                    <p>It’s rockin’ an awesome portfolio section too – nice. </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div id="zilla-twitter-widget-2" class="widget zilla-tweet-widget">
+                  <h3 class="widget-title">Twitter Widget</h3>
+                  <ul>
+                    <li>Hanna 1.4 is out, with an added option for a single-column blog layout! This portfolio theme keeps gettin&#39; better: <a href="http://t.co/8MFTS9Kh0P" target="_blank">http://t.co/8MFTS9Kh0P</a><a class="twitter-time-stamp" href="http://twitter.com/themezilla/status/555788023627935744">15 Jan 2015</a></li>
+                    <li>Introducing Motive, a super-flexible WordPress theme for creatives. Take it for a spin at: <a href="http://t.co/gpMziIdHlF" target="_blank">http://t.co/gpMziIdHlF</a> <a href="http://t.co/2VyRVSSyeD" target="_blank">http://t.co/2VyRVSSyeD</a><a class="twitter-time-stamp" href="http://twitter.com/themezilla/status/553311561578602496">08 Jan 2015</a></li>
+                    <li>Huge Boxing Week Sale! 40% off all themes and memberships from now until Jan 2! Just use &#34;BOXINGWEEK&#34; at checkout. <a href="http://t.co/221J2Xer7C" target="_blank">http://t.co/221J2Xer7C</a><a class="twitter-time-stamp" href="http://twitter.com/themezilla/status/548508574423732225">26 Dec 2014</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="column">
+                <div id="text-3" class="widget widget_text">
+                  <h3 class="widget-title">Text Widget</h3>
+                  <div class="textwidget">
+                    <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div id="tz_flickr_widget-2" class="widget tz_flickr_widget">
+                  <h3 class="widget-title">Flickr Widget</h3>
+                  <div id="flickr_badge_wrapper" class="clearfix">
+                  <!--
+                  <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=10133335@N08"></script>
+                  -->
+                  </div>
+                </div>
+              </div>
+
+            <!--END #overlay-inner -->
+            </div>
+
+          <!--END #widget-overlay -->
+          </div>
+
+          {% if app.login %}
+          <div id="overlay-open" class="user-nav">
+            <a href="#"><img src="{{ app.user.avatar }}" class="avatar" /></a>
+            <a href="{{ url('signout') }}" class="circle"><i class="fa fa-sign-out"></i>登出</a>
+            <a href="{{ url('user/article/new') }}" class="circle"><i class="fa fa-pencil"></i>遊記</a>
+            <a href="#" class="circle"><i class="fa fa-photo"></i>相片</a>
+            <a href="#" class="circle"><i class="fa fa-rss"></i>動態</a>
+          </div>
+          {% else %}
+          <div id="overlay-open">
+            <a href="{{ url('signin') }}"><i class="fa fa-key"></i></a>
+          </div>
+          {% endif %}
+
+        <!--END #widget-overlay-container -->
+        </div>
+
+        <!--BEGIN #sidebar .aside-->
+        <div id="sidebar" class="aside">
+
+          <!-- BEGIN #logo -->
+          <div id="logo">
+            <a href="{{ url('index') }}"><img src="img/logo.png" alt="Gridlocked" /></a>
+            <p id="tagline">
+              美麗與壯闊，探索與哀愁<br />
+              Spark 串起所有旅遊的感動
+            </p>
+          </div>
+          <!-- END #logo -->
+
+          <div class="seperator clearfix">
+            <div class="line"></div>
+          </div>
+
+          <div id="nav_menu-5" class="widget widget_nav_menu">
+            <h3 class="widget-title">Pages</h3>
+            <div class="menu-main-container">
+              <ul id="menu-main" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Elements</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Archives</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Full Width</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Blog</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="seperator clearfix">
+            <div class="line"></div>
+          </div>
+
+          <div class="widget">
+            <h3 class="widget-title">Skills</h3>
+            <ul id="filter">
+              <li class="cat-item"><a href="#">Animation</a></li>
+              <li class="cat-item"><a href="#">Artwork</a></li>
+              <li class="cat-item"><a href="#">Motion Graphics</a></li>
+              <li class="cat-item"><a href="#">Print Design</a></li>
+              <li class="cat-item"><a href="#">Product Design</a></li>
+              <li class="cat-item"><a href="#">Web Design</a></li>
+            </ul>
+          </div>
+
+          <!-- BEGIN #back-to-top -->
+          <div id="back-to-top">
+            <a href="#">
+              <span class="icon"><span class="arrow"></span></span>
+              <span class="text">Back to Top</span>
+            </a>
+          <!-- END #back-to-top -->
+          </div>
+
+        <!--END #sidebar .aside-->
+        </div>
+
+        {% block wrapper %}{% endblock %}
+
+      </div>
+    </div>
+
+    <!-- BEGIN #footer -->
+    <div id="footer" class="clearfix">
+
+      <p class="copyright">&copy; Copyright 2015 <a href="http://demo.themezilla.com/gridlocked">Spark</a> &middot; Powered by <a href="http://stim.in/">STIM</a>
+        <!--
+       <br /> <a href="http://www.themezilla.com/themes/gridlocked">Gridlocked</a> by <a href="http://www.themezilla.com">ThemeZilla</a>
+       -->
+      </p>
+
+      <p class="credit">Stalk us on <a href="http://dribbble.com/ormanclark">Dribbble</a>, <a href="http://forrst.com/people/ormanclark">Forrst</a> or <a href="http://twitter.com/themezilla">Twitter</a></p>
+
+    <!-- END #footer -->
+    </div>
+
+  </div>
+
+  <!-- bower-js:start -->
+  <script src="assets/components/jquery/dist/jquery.js"></script>
+  <script src="assets/components/jquery-ui/jquery-ui.js"></script>
+  <script src="assets/components/jplayer/dist/jplayer/jquery.jplayer.js"></script>
+  <script src="assets/components/medium-editor/dist/js/medium-editor.js"></script>
+  <script src="assets/components/handlebars/handlebars.runtime.js"></script>
+  <script src="assets/components/jquery-sortable/source/js/jquery-sortable-min.js"></script>
+  <script src="assets/components/eventie/eventie.js"></script>
+  <script src="assets/components/eventEmitter/EventEmitter.js"></script>
+  <script src="assets/components/get-style-property/get-style-property.js"></script>
+  <script src="assets/components/get-size/get-size.js"></script>
+  <script src="assets/components/doc-ready/doc-ready.js"></script>
+  <script src="assets/components/matches-selector/matches-selector.js"></script>
+  <script src="assets/components/outlayer/item.js"></script>
+  <script src="assets/components/outlayer/outlayer.js"></script>
+  <script src="assets/components/masonry/masonry.js"></script>
+  <script src="assets/components/blueimp-tmpl/js/tmpl.js"></script>
+  <script src="assets/components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+  <script src="assets/components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+  <script src="assets/components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+  <script src="assets/components/medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.js"></script>
+  <!-- bower-js:end -->
+
+  <script>
+  $(function () {
+
+    var editor = new MediumEditor ('.editor', {
+      disablePlaceholders: true,
+      firstHeader: 'h2',
+      secondHeader: 'h3'
+    });
+
+    $('.editor').on('input', function() {
+
+      var allContents = editor.serialize ();
+      var elContent = allContents["element-0"].value;
+
+      $('textarea.content').val (elContent);
+    });
+
+    $('.editor').mediumInsert ({
+      editor: editor,
+      addons: {
+        images: {
+          uploadScript: '{{ path('user/photo/upload') }}'
+        }
+      }
+    });
+
+    $('.medium-insert-buttons-show').html ('<i class="fa fa-share"></i>');
+
+  });
+  </script>
+
+<!--END body-->
+</body>
+<!--END html-->
+</html>

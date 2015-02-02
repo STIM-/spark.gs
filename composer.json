@@ -1,0 +1,31 @@
+{
+  "require": {
+
+    "silex/silex": "~1.2",
+    "j4mie/idiorm": "1.5.*",
+    "j4mie/paris": "1.5.*",
+    "twig/twig": "1.*",
+
+    "symfony/form": "2.*",
+    "symfony/validator": "2.*",
+    "symfony/config": "2.*",
+    "symfony/translation": "2.*",
+    "symfony/locale": "2.*",
+    "symfony/twig-bridge": "2.*",
+    "symfony/security": "2.*",
+    "symfony/yaml": "2.*",
+    "symfony/css-selector": "3.0.*@dev",
+    "symfony/dom-crawler": "3.0.*@dev",
+
+    "facebook/php-sdk-v4": "4.0.*",
+    "gregwar/captcha": "dev-master",
+
+    "twig/extensions": "dev-master",
+
+    "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev",
+    "kriswallsmith/assetic": "1.2.*@dev",
+    "ircmaxell/password-compat": "dev-master",
+
+    "wake/php-array-kit": "dev-master"
+  }
+}

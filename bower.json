@@ -1,0 +1,15 @@
+{
+  "name": "Spark.gs",
+  "dependencies": {
+    "jquery": "1.*",
+    "jquery-ui": "1.*",
+    "jquery-sortable": "0.*",
+    "jquery-easing-original": "1.*",
+    "fancybox": "2.*",
+    "jplayer": "2.*",
+    "font-awesome": "4.*",
+    "masonry": "3.*",
+    "medium-editor": "2.*",
+    "medium-editor-insert-plugin": "https://github.com/wake/medium-editor-insert-plugin.git#custom"
+  }
+}
