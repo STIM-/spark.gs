@@ -1,0 +1,47 @@
+
+/*
+ * 外層
+ *
+ */
+
+.page-section {
+  padding-top: 70px;
+}
+
+
+/*
+ * 首頁特色
+ *
+ */
+
+.alt-features-grid .fa {
+  font-size: 48px;
+  color: #333;
+}
+
+.alt-features-grid .alt-features-title {
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+
+
+/*
+ * 字體大小
+ *
+ */
+
+.font-16 { font-size: 16px; }
+.font-18 { font-size: 18px; }
+.font-22 { font-size: 22px; }
+
+
+/*
+ * 單字間距
+ *
+ */
+ 
+.ls-1 { letter-spacing: .1em; }
+.ls-2 { letter-spacing: .2em; }
+.ls-3 { letter-spacing: .3em; }
+.ls-4 { letter-spacing: .4em; }
+.ls-5 { letter-spacing: .5em; }
