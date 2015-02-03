@@ -30,6 +30,9 @@ if($_POST)
 	$user_Email       = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
 	$user_Message     = filter_var($_POST["userMessage"], FILTER_SANITIZE_STRING);
 	
+	$user_Message = str_replace("\&#39;", "'", $user_Message);
+	$user_Message = str_replace("&#39;", "'", $user_Message);
+	
 	//additional php validation
 	if(strlen($user_Name)<4) // If length is less than 4 it will throw an HTTP error.
 	{

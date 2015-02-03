@@ -28,32 +28,31 @@ Primary use:    MultiPurpose Template
 7. Compact bar / .nav-bar-compact
 8. Classic menu bar / .main-nav
 9. Sections styles / .page-section, .small-section, .split-section
-10. Services / .service-grid
-11. Alternative services / .alt-service-grid
-12. Team / .team-grid
-13. Features
-14. Benefits (Process)
-15. Counters
-16. Portfolio / #portfolio
-    16.1. Works filter
-    16.2. Works grid
-    16.3. Works full view
-17. Banner section
-18. Testimonial
+10. Alternative services / .alt-service-grid
+11. Team / .team-grid
+12. Features
+13. Benefits (Process)
+14. Counters
+15. Portfolio / #portfolio
+    15.1. Works filter
+    15.2. Works grid
+    15.3. Works full view
+16. Banner section
+17. Testimonial
     18.1. Logotypes
-19. Last posts (blog section)
-20. Newsletter
-21. Contact section
-    21.1. Contact form
-22. Bottom menu / .bot-menu
-23. Google maps  /.google-map
-24. Footer / .footer
-25. Blog
-    25.1. Pagination
-    25.2. Comments
-    25.3. Sidebar
-26. Pricing
-27. Shortcodes
+18. Post previews (news section)
+19. Newsletter
+20. Contact section
+    20.1. Contact form
+21. Bottom menu / .bot-menu
+22. Google maps  /.google-map
+23. Footer / .footer
+24. Blog
+    24.1. Pagination
+    24.2. Comments
+    24.3. Sidebar
+25. Pricing
+25. Shortcodes
     27.1. Owl Carousel
     27.2. Tabs
     27.3. Tabs minimal
@@ -63,7 +62,7 @@ Primary use:    MultiPurpose Template
     27.7. Progress bars
     27.8. Font icons examples
     27.9. Intro page
-28. Bootstrap multicolumn grid
+25. Bootstrap multicolumn grid
 
 
 /*------------------------------------------------------------------
@@ -1604,7 +1603,7 @@ a.logo:hover{
 	display: none;
 	opacity: 0;
 	position: relative;
-    left: 0;
+    left: 0 !important;
     right: 0;
     top: 0;
     bottom: 0;
@@ -2269,147 +2268,6 @@ a.logo:hover{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-
-/* ==============================
-   Services
-   ============================== */
-
-.service-grid{
-	border-bottom: 1px solid rgba(0,0,0, .05);
-}
-.service-item{
-	display: table;
-	width: 33.3%;
-	float: left;
-	overflow: hidden;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.si-cell{	
-	display: table-cell;
-	padding: 30px;
-	border-top: 1px solid rgba(0,0,0, .05);
-	border-left: 1px solid rgba(0,0,0, .05);
-	position: relative;
-	vertical-align: middle;
-	text-align: center;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.si-inner{
-	position: relative;
-	overflow: hidden;
-	max-height: 100%;
-}
-
-
-.service-intro{
-	position: relative;
-	
-	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
-    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-}
-.service-icon{	
-	margin-bottom: 10px;
-	font-size: 32px;
-	color: #e41919;
-}
-.service-title{
-	margin: 0;
-	padding: 0;
-	font-size: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: #000;
-}
-.service-descr .service-title{
-	margin-bottom: 30px;
-}
-
-.service-descr{
-	opacity: 0;
-	position: relative;
-	font-size: 13px; 
-	line-height: 1.8;
-	color: #777;
-	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-	
-	-webkit-transform: perspective(500px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
-	-moz-transform: perspective(500px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
-	-o-transform: perspective(500px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
-	-ms-transform: perspective(500px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
-	transform: perspective(500px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
-	
-	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
-    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-
-}
-
-/* Service hover */
-
-.no-mobile .service-item:hover .service-intro{
-	opacity: 0;	
-	
-	-webkit-transform: scale(0);
-    -moz-transform: scale(0);
-	-o-transform: scale(0);
-	-ms-transform: scale(0);
-    transform: scale(0);
-}
-
-.no-mobile .service-item:hover .service-descr{	
-	opacity: 1;
-	-webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	-moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	-o-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	-ms-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);    
-}
-
-/* Service mobile click */
-
-.service-item.js-active .service-intro{
-	opacity: 0;	
-	
-	-webkit-transform: scale(0);
-    -moz-transform: scale(0);
-	-o-transform: scale(0);
-	-ms-transform: scale(0);
-    transform: scale(0);
-}
-
-.service-item.js-active .service-descr{	
-	opacity: 1;
-	-webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	-moz-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	-o-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	-ms-transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-	transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);    
 }
 
 
@@ -3316,7 +3174,7 @@ a.logo:hover{
 
 
 /* ==============================
-   Post preview
+   Post previews
    ============================== */
 
 .post-grid{
