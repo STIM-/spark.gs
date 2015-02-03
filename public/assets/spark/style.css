@@ -1,3 +1,10 @@
+.nav-logo-wrap .logo {
+display: table-cell;
+vertical-align: middle;
+max-width: 120px;
+width: 75px;
+height: 75px;
+}
 
 /*
  * 外層
@@ -6,6 +13,7 @@
 
 .page-section {
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 
@@ -16,7 +24,7 @@
 
 .alt-features-grid .fa {
   font-size: 48px;
-  color: #333;
+  color: #666;
 }
 
 .alt-features-grid .alt-features-title {
@@ -26,13 +34,31 @@
 
 
 /*
+ * 透明度
+ *
+ */
+
+.opacity-1 { opacity: .1; }
+.opacity-3 { opacity: .3; }
+.opacity-5 { opacity: .5; }
+.opacity-7 { opacity: .7; }
+.opacity-9 { opacity: .9; }
+
+
+/*
  * 字體大小
  *
  */
 
+.font-12 { font-size: 12px; }
+.font-14 { font-size: 14px; }
 .font-16 { font-size: 16px; }
 .font-18 { font-size: 18px; }
 .font-22 { font-size: 22px; }
+.font-24 { font-size: 24px; }
+.font-32 { font-size: 32px; }
+.font-48 { font-size: 48px; }
+.font-64 { font-size: 64px; }
 
 
 /*
@@ -45,3 +71,13 @@
 .ls-3 { letter-spacing: .3em; }
 .ls-4 { letter-spacing: .4em; }
 .ls-5 { letter-spacing: .5em; }
+
+
+/*
+ * 樣式和顏色
+ *
+ */
+
+.italic {
+  font-style: italic;;
+}

@@ -279,7 +279,7 @@
     /* ---------------------------------------------
      Scroll navigation
      --------------------------------------------- */
-    
+    /*
     function init_scroll_navigate(){
         
         $(".local-scroll").localScroll({
@@ -304,7 +304,7 @@
         });
         
     }
-    
+    */
     
     
     /* ---------------------------------------------
@@ -505,7 +505,7 @@ function initPageSliders(){
             slideSpeed: 350,
             singleItem: true,
             autoHeight: true,
-            navigation: true,
+            navigation: false,
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
         
