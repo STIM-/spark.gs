@@ -20,6 +20,10 @@
   font-weight: bold;
 }
 
+.inner-nav ul li .mn-sub li .mn-group-title {
+  color: #fff !important;
+}
+
 
 /*
  * 首頁特色
