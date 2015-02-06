@@ -3,8 +3,8 @@
 [Master Stylesheet]
 
 Project:    Rhythm
-Version:    1
-Last change:    Initial RELEASED
+Version:    1.5
+Last change:    Line 4111
 Primary use:    MultiPurpose Template  
 -------------------------------------------------------------------*/
 
@@ -51,8 +51,9 @@ Primary use:    MultiPurpose Template
     24.1. Pagination
     24.2. Comments
     24.3. Sidebar
-25. Pricing
-25. Shortcodes
+25. Shop
+26. Pricing
+27. Shortcodes
     27.1. Owl Carousel
     27.2. Tabs
     27.3. Tabs minimal
@@ -62,7 +63,7 @@ Primary use:    MultiPurpose Template
     27.7. Progress bars
     27.8. Font icons examples
     27.9. Intro page
-25. Bootstrap multicolumn grid
+28. Bootstrap multicolumn grid
 
 
 /*------------------------------------------------------------------
@@ -4103,6 +4104,22 @@ a.blog-item-more:hover{
 }
 .widget-posts-descr{
     overflow: hidden;
+}
+
+
+/* ==============================
+   Shop
+   ============================== */
+  
+.shopping-cart-table{
+
+}
+.shopping-cart-table a{
+    text-decoration: none;
+}
+table.shopping-cart-table tr th,
+table.shopping-cart-table tr td{
+    vertical-align: middle;
 }
 
 
