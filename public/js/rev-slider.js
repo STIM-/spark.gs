@@ -86,7 +86,8 @@
             fullWidth: "off",
             fullScreen: "on",
             fullScreenOffsetContainer: "",
-            navigationStyle: "preview4",
+            //navigationStyle: "preview4",
+            navigationStyle: "round",
         });
         
         

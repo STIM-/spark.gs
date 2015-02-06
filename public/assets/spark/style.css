@@ -30,6 +30,16 @@
 
 
 /*
+ * Logo
+ *
+ */
+
+.nav-logo-wrap .logo {
+  width: 75px;
+}
+
+
+/*
  * 首頁特色
  *
  */
