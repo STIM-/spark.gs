@@ -24,6 +24,10 @@
   color: #fff !important;
 }
 
+.main-nav {
+  background: rgba(10,10,10, .75) !important;
+}
+
 
 /*
  * 首頁特色
@@ -51,6 +55,12 @@
 .opacity-5 { opacity: .5; }
 .opacity-7 { opacity: .7; }
 .opacity-9 { opacity: .9; }
+
+.bg-opacity-1 { opacity: .1; }
+.bg-opacity-3 { opacity: .3; }
+.bg-opacity-5 { opacity: .5; }
+.bg-opacity-7 { opacity: .7; }
+.bg-opacity-9 { opacity: .9; }
 
 
 /*
